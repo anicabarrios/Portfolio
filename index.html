@@ -9,7 +9,9 @@
 </head>
 <body>
     <header>
-        <h1>Anica Barrios</h1>
+        <section>
+            <h1>Anica Barrios</h1>
+        </section>
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
@@ -25,58 +27,61 @@
 
     <main>
         <section id="about" class="row">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus obcaecati dolore necessitatibus blanditiis tempore consequatur quam eum! Veritatis, quasi. Nisi, iure! Optio omnis iusto, facere eius tempore autem qui aliquam!</p>
+            <section class="column-left">
+                <h2>About Me</h2>
+            </section>
+            <section class="column-right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus obcaecati dolore necessitatibus blanditiis tempore consequatur quam eum! Veritatis, quasi. Nisi, iure! Optio omnis iusto, facere eius tempore autem qui aliquam!</p>
+            </section>
         </section>
 
         <section id="work" class="row">
-            <h2>Work</h2>
-            <div class="work-gallery">
-                <!-- Main project with a distinctively larger image -->
-                <a href="https://www.example.com/main-project">
-                    <img src="https://placehold.co/800x400" alt="Main project" style="width: 100%;">
-                </a>
-                <p>My Main Project</p>
-
-                <!-- Additional projects with smaller images -->
-                <div class="small-images">
-                    <a href="https://www.example.com/project-2">
-                        <img src="https://placehold.co/400x200" alt="Project 2">
+            <section class="column-left">
+                <h2>Work</h2>
+            </section>
+            <section class="column-right">
+                <figure id="big-img">
+                    <a href="https://coolors.co/palettes/trending">
+                        <img src="https://placehold.co/800x400" alt="Main project">
                     </a>
-                    <p>Project 2</p>
-                </div>
+                    <figcaption>big image - Main Project</figcaption>
+                </figure>
                 <div class="small-images">
-                    <a href="https://www.example.com/project-2">
-                        <img src="https://placehold.co/400x200" alt="Project 3">
-                    </a>
-                    <p>Project 2</p>
+                    <figure>
+                        <img src="https://placehold.co/400x400" alt="Project 2">
+                        <figcaption>small image - Project 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://placehold.co/400x400" alt="Project 3">
+                        <figcaption>small image - Project 3</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://placehold.co/400x400" alt="Project 4">
+                        <figcaption>small image - Project 4</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://placehold.co/400x400" alt="Project 5">
+                        <figcaption>small image - Project 5</figcaption>
+                    </figure>
                 </div>
-                <div class="small-images">
-                    <a href="https://www.example.com/project-2">
-                        <img src="https://placehold.co/400x200" alt="Project 4">
-                    </a>
-                    <p>Project 2</p>
-                </div>
-                <div class="small-images">
-                    <a href="https://www.example.com/project-2">
-                        <img src="https://placehold.co/400x200" alt="Project 5">
-                    </a>
-                    <p>Project 2</p>
-                </div>
-              
-            </div>
+            </section>
+            
         </section>
     </main>
 
     <footer>
         <section id="contact" class="row">
-            <h2>Contact</h2>
-            <ul>
-                <li>Phone: 111-999-9999</li>
-                <li>Email: <a href="mailto:anicabarrios1@gmail.com">anicabarrios1@gmail.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/anica-barrios-b104062ab/">Your LinkedIn</a></li>
-                <li>GitHub: <a href="https://github.com/anica-barrios">Your GitHub</a></li>
-            </ul>
+            <section class="column-left">
+                <h2>Contact</h2>
+            </section>
+            <section class="column-right">
+                <ul>
+                    <li>Phone: <a href="tel:111-999-9999">111-999-9999</a></li>
+                    <li>Email: <a href="mailto:anicabarrios1@gmail.com">anicabarrios1@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/anica-barrios-b104062ab/">Your LinkedIn</a></li>
+                    <li>GitHub: <a href="https://github.com/anica-barrios">Your GitHub</a></li>
+                </ul>
+            </section>
         </section>
     </footer>
 </body>

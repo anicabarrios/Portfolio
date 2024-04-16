@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ff85a2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column-left, .column-right {
+    padding: 10px;
+}
+
