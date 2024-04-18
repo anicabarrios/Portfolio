@@ -5,7 +5,7 @@ Welcome to my professional portfolio! This portfolio is designed to showcase a v
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Live link](#live-link)
+- [Preview and Live Link](#preview-and-live-link)
 - [Credits](#credits)
 - [Contact](#contact)
 
@@ -34,8 +34,11 @@ This portfolio presents my professional work as a developer, including a link to
 - HTML
 - CSS (with responsive design principles)
 
-## Live Link
-To view my portfolio, simply visit the deployed website at [Link to Portfolio](#).
+## Preview and Live Link
+To view my portfolio, simply visit the deployed website at [Link to Portfolio](https://anicabarrios.github.io/Portfolio/).
+
+![Preview Screenshot](./assets/images/screenshot.png)
+
 
 ## Credits
 This portfolio is designed and maintained by me, Anica Barrios, with contributions from various open source libraries and frameworks as noted in the project documentation.
