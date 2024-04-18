@@ -1,3 +1,4 @@
+/* General body styles including font family, text color, and background color. */
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
@@ -5,6 +6,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header styling including background color, text color, padding, and text alignment. */
 header {
     background-color: #c6a9d1; /* Darker pastel purple for header */
     color: white;
@@ -12,6 +14,7 @@ header {
     text-align: center;
 }
 
+/* Heading styles for h1 and h2 for font size and alignment. */
 h1 {
    font-size: 2rem; 
 }
@@ -20,6 +23,7 @@ h2 {
     text-align: center;
 }
 
+/* Navigation styles with no list style, padding reset, and inline display for items. */
 nav ul {
     list-style: none;
     padding: 0;
@@ -30,6 +34,7 @@ nav ul li {
     margin-right: 20px;
 }
 
+/* Styling for navigation links, including color, no underline, font size, and weight. */
 nav a {
     color: white;
     text-decoration: none;
@@ -37,27 +42,34 @@ nav a {
     font-weight: bold;
 }
 
-#hero img {
-    width: 100%;
-    height: 60vh; 
-}
-
+/* Main content area padding. */
 main {
     padding: 20px;
 }
 
+/* Style figures with flex properties, margin, positioning, and box model adjustments. */
+figure {
+    flex: 1 1 48%;
+    margin: 1%;
+    position: relative; 
+    box-sizing: border-box;
+}
+
+/* Styling for introductory section with centered text and padding. */
 .intro {
     text-align: center;
     padding-top: 5%;
     width: 90%; 
 }
 
+/* Flex container for layout with space between items and margin adjustments. */
 .row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
+/* Column layout styles for left and right columns, including padding and alignment. */
 .column-left, .column-right {
     padding: 10px;
     display: flex;
@@ -73,11 +85,7 @@ main {
     flex: 3;
 }
 
-#big-img img {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
+/* Styles for a gallery of small images with flex and wrapping behavior. */
 .small-images {
     display: flex;
     flex-wrap: wrap;
@@ -85,25 +93,56 @@ main {
     width: 100%;
 }
 
-.small-images figure {
-    flex: 1 1 48%;
-    margin: 1%;
-    box-sizing: border-box;
-}
-
+/* Styles for individual images and figcaptions within the small images gallery. */
 .small-images img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
-figure, figcaption {
-    text-align: center;
+.small-images figcaption {
+    position: absolute;
+    bottom: 0; /* Position at the bottom inside the image */
+    left: 0; /* Align with the left edge */
+    width: 100%; /* Responsive width */
+    background-color: #c6a9d1;
+    color: white;
+    padding: 8px;
+    text-align: center; /* Centered text for better readability */
+    font-size: 0.8em;
+    border-radius: 0 5px 0 0; /* Rounded corners on the top right */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-figcaption {
-    margin-top: 5px;
+/* Style for a large image figcaption with positioning, background, and styling. */
+#big-img figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Responsive width */
+    background-color: #c6a9d1;
+    color: white;
+    padding: 12px;
+    text-align: center; /* Center alignment */
+    font-size: 1.1em;
+    border-radius: 0 10px 0 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Image styling within the big image container. */
+#big-img img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+/* Hero image styling with responsive width and height. */
+#hero img {
+    width: 100%;
+    height: 55vh; 
+}
+
+/* Footer styles with background color, text color, text alignment, and padding. */
 footer {
     background-color: #5c4a72;
     color: white;
@@ -111,11 +150,13 @@ footer {
     padding: 20px 10px;
 }
 
+/* Footer link styles with color and no text decoration. */
 footer a {
     color: #c6a9d1;
     text-decoration: none;
 }
 
+/* Media queries for responsive design adjustments on smaller screens. */
 @media (max-width: 768px) {
     .row {
         flex-direction: column;
@@ -128,5 +169,11 @@ footer a {
 
     .column-right {
         padding-left: 0;
+    }
+
+    .small-images figcaption, #big-img figcaption {
+        width: 100%; /* Ensure full width at smaller screen sizes */
+        text-align: center; /* Keep text centered */
+        font-size: 0.9em; /* Adjust font size for readability */
     }
 }
